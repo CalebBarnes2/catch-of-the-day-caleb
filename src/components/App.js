@@ -102,9 +102,9 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="catch-of-the-day">
+        <div className="app-wrapper">
             <div className="menu">
-              <Header tagline="Fresh Market"/>
+              <Header tagline="store tagline"/>
               <ul className="list-of-fishes">
                 {
                   Object
@@ -116,7 +116,7 @@ class App extends React.Component {
                 }
               </ul>
             </div>
-            <div className="right-wrap">
+            <div className="order-wrapper">
               <Order
                 fishes={this.state.fishes}
                 order={this.state.order}
